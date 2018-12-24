@@ -1,0 +1,27 @@
+[qasite3]
+[qasite3:children]
+mdb
+sdb
+mvl
+tti
+
+[qasite3:vars]
+ansible_user=Administrator
+become_method=runas
+ansible_password=Cdci2018
+ansible_connection=winrm
+ansible_winrm_server_cert_validation=ignore
+
+
+[mdb]
+QA750MDB3 ansible_host=128.168.53.10
+
+[sdb]
+QA750SDB3 ansible_host=128.168.53.11
+
+[mvl]
+QA750MVL3 ansible_host=128.168.53.12
+
+[tti]
+QA750TONE3 ansible_host=128.168.53.14 ansible_password=cdci
+
