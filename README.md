@@ -14,5 +14,4 @@ Check for hosts availability:
 ansible -m win_ping -i inventory_qasite3 all
 
 Usage:
-
 ansible-playbook firewall_spot.yml -i inventory_qasite3 -l mdb
