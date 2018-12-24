@@ -8,7 +8,7 @@ Requirements:
 - Powershell >=3.0 installed on SPOT site
 - SPOT site configured using https://github.com/ansible/ansible/blob/devel/examples/scripts/ConfigureRemotingForAnsible.ps1
 - SPOT site must be available for an Ansible host
-- Firewall service must be configured as automatically enabled 
+- Firewall service must be configured as: "Status" is running and "Startup Type" is Automatic
 
 Check for hosts availability:
 ansible -m win_ping -i inventory_qasite3 all
