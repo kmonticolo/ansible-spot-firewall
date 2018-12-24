@@ -10,6 +10,9 @@ Requirements:
 - SPOT site must be available for an Ansible host
 - Firewall service must be configured as automatically enabled 
 
+Check for hosts availability:
+ansible -m win_ping -i inventory_qasite3 all
+
 Usage:
 
 ansible-playbook firewall_spot.yml -i inventory_qasite3 -l mdb
