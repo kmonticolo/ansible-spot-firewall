@@ -239,3 +239,28 @@ firewall_port_rules:
   - { name: alarmcol_tti_445_in_tcp , host: tti , localport: 445 , action: allow , direction: in , protocol: tcp , state: present, enabled: yes }
   - { name: alarmcol_tti_137_in_udp , host: tti , localport: 137 , action: allow , direction: in , protocol: udp , state: present, enabled: yes }
   - { name: alarmcol_tti_138_in_udp , host: tti , localport: 138 , action: allow , direction: in , protocol: udp , state: present, enabled: yes }
+  - { name: sdvlc_ Inserter__in_TCP , host:  Inserter , localport: 2890 , action: allow , direction: in , protocol: TCP , state: present, enabled: yes }
+  - { name: sdvlc_ Inserter__in_TCP , host:  Inserter , localport: 4003 , action: allow , direction: in , protocol: TCP , state: present, enabled: yes }
+  - { name: sdvlc_ Inserter__in_TCP , host:  Inserter , localport: 4004 , action: allow , direction: in , protocol: TCP , state: present, enabled: yes }
+  - { name: sdvlc_ Inserter__in_TCP , host:  Inserter , localport: 139 , action: allow , direction: in , protocol: TCP , state: present, enabled: yes }
+  - { name: sdvlc_ Inserter__in_TCP , host:  Inserter , localport: 445 , action: allow , direction: in , protocol: TCP , state: present, enabled: yes }
+  - { name: sdvlc_ Inserter__in_UDP , host:  Inserter , localport: 137 , action: allow , direction: in , protocol: UDP , state: present, enabled: yes }
+  - { name: sdvlc_ Inserter__in_UDP , host:  Inserter , localport: 138 , action: allow , direction: in , protocol: UDP , state: present, enabled: yes }
+  - { name: sdvls_Inserter__in_TCP , host: Inserter , localport: 2891 , action: allow , direction: in , protocol: TCP , state: present, enabled: yes }
+  - { name: sdvls_Inserter__in_TCP , host: Inserter , localport: 4004 , action: allow , direction: in , protocol: TCP , state: present, enabled: yes }
+  - { name: sdvls_Inserter__in_TCP , host: Inserter , localport: 4005 , action: allow , direction: in , protocol: TCP , state: present, enabled: yes }
+  - { name: sdvls_Inserter__in_TCP , host: Inserter , localport: 139 , action: allow , direction: in , protocol: TCP , state: present, enabled: yes }
+  - { name: sdvls_Inserter__in_TCP , host: Inserter , localport: 445 , action: allow , direction: in , protocol: TCP , state: present, enabled: yes }
+  - { name: sdvls_Inserter__in_UDP , host: Inserter , localport: 137 , action: allow , direction: in , protocol: UDP , state: present, enabled: yes }
+  - { name: gpi_Inserter__in_TCP , host: Inserter , localport: 2897 , action: allow , direction: in , protocol: TCP , state: present, enabled: yes }
+  - { name: gpi_Inserter__in_TCP , host: Inserter , localport: 4088 , action: allow , direction: in , protocol: TCP , state: present, enabled: yes }
+  - { name: gpi_Inserter__in_TCP , host: Inserter , localport: 4089 , action: allow , direction: in , protocol: TCP , state: present, enabled: yes }
+  - { name: gpi_Inserter__in_TCP , host: Inserter , localport: 139 , action: allow , direction: in , protocol: TCP , state: present, enabled: yes }
+  - { name: gpi_Inserter__in_TCP , host: Inserter , localport: 445 , action: allow , direction: in , protocol: TCP , state: present, enabled: yes }
+  - { name: gpi_Inserter__in_UDP , host: Inserter , localport: 9025 , action: allow , direction: in , protocol: UDP , state: present, enabled: yes }
+  - { name: gpi_Inserter__in_UDP , host: Inserter , localport: 137 , action: allow , direction: in , protocol: UDP , state: present, enabled: yes }
+  - { name: gpi_Inserter__in_UDP , host: Inserter , localport: 138 , action: allow , direction: in , protocol: UDP , state: present, enabled: yes }
+  - { name: tonescraper_Inserter__in_TCP , host: Inserter , localport: 139 , action: allow , direction: in , protocol: TCP , state: present, enabled: yes }
+  - { name: tonescraper_Inserter__in_TCP , host: Inserter , localport: 445 , action: allow , direction: in , protocol: TCP , state: present, enabled: yes }
+  - { name: tonescraper_Inserter__in_UDP , host: Inserter , localport: 137 , action: allow , direction: in , protocol: UDP , state: present, enabled: yes }
+  - { name: tonescraper_Inserter__in_UDP , host: Inserter , localport: 138 , action: allow , direction: in , protocol: UDP , state: present, enabled: yes }
