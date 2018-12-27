@@ -60,3 +60,23 @@
         enabled: "{{ item.enabled }}"
       when: item.host == "mvl"
       with_items: "{{ firewall_port_rules }}"
+
+- name: Firewall rule Inserter
+  hosts: inserter
+  gather_facts: false
+  tasks:
+    - name: include variables
+      include_vars:
+        file: firewall_port_rules.yml
+
+    - name: insert rule Inserter
+      win_firewall_rule:
+        name: "{{ item.name }}"
+        localport: "{{ item.localport }}"
+        action: "{{ item.action }}"
+        direction: "{{ item.direction }}"
+        protocol: "{{ item.protocol }}"
+        state: "{{ item.state }}"
+        enabled: "{{ item.enabled }}"
+      when: item.host == "Inserter"
+      with_items: "{{ firewall_port_rules }}"
