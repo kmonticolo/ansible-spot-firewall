@@ -1,5 +1,7 @@
 ---
 firewall_port_rules:
+  - { name: in3389rdp , host: Inserter, localport: 3389 , action: allow , direction: in , protocol: tcp , state: present, enabled: yes }
+  - { name: in5986winrm , host: Inserter, localport: 5986 , action: allow , direction: in , protocol: tcp , state: present, enabled: yes }
   - { name: in3389rdp , host: mdb , localport: 3389 , action: allow , direction: in , protocol: tcp , state: present, enabled: yes }
   - { name: in5986winrm , host: mdb , localport: 5986 , action: allow , direction: in , protocol: tcp , state: present, enabled: yes }
   - { name: in3389rdp , host: sdb , localport: 3389 , action: allow , direction: in , protocol: tcp , state: present, enabled: yes }
