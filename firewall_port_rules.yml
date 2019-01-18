@@ -155,7 +155,7 @@ firewall_port_rules:
   - { name: alarmcol_mdb_137_in_udp , host: mdb , localport: 137 , action: allow , direction: in , protocol: udp , state: present, enabled: yes }
   - { name: alarmcol_mdb_138_in_udp , host: mdb , localport: 138 , action: allow , direction: in , protocol: udp , state: present, enabled: yes }
   - { name: alarmcol_mdb_123_in_udp , host: mdb , localport: 123 , action: allow , direction: in , protocol: udp , state: present, enabled: yes }
-  - { name: alarmcol_mdb_512-1024_in_tcp , host: mdb , localport: 512-1024 , action: allow , direction: in , protocol: tcp , state: present, enabled: yes }
+  - { name: alarmcol_mdb_512-1023_in_tcp , host: mdb , localport: 512-1023 , action: allow , direction: in , protocol: tcp , state: present, enabled: yes }
   - { name: alarmcol_mdb_3389_in_tcp , host: mdb , localport: 3389 , action: allow , direction: in , protocol: tcp , state: present, enabled: yes }
   - { name: alarmcol_mdb_1433_out_tcp , host: mdb , localport: 1433 , action: allow , direction: out , protocol: tcp , state: present, enabled: yes }
   - { name: alarmcol_mdb_1434_out_tcp , host: mdb , localport: 1434 , action: allow , direction: out , protocol: tcp , state: present, enabled: yes }
@@ -182,7 +182,7 @@ firewall_port_rules:
   - { name: alarmcol_sdb_137_in_udp , host: sdb , localport: 137 , action: allow , direction: in , protocol: udp , state: present, enabled: yes }
   - { name: alarmcol_sdb_138_in_udp , host: sdb , localport: 138 , action: allow , direction: in , protocol: udp , state: present, enabled: yes }
   - { name: alarmcol_sdb_123_in_udp , host: sdb , localport: 123 , action: allow , direction: in , protocol: udp , state: present, enabled: yes }
-  - { name: alarmcol_sdb_512-1024_in_tcp , host: sdb , localport: 512-1024 , action: allow , direction: in , protocol: tcp , state: present, enabled: yes }
+  - { name: alarmcol_sdb_512-1023_in_tcp , host: sdb , localport: 512-1023 , action: allow , direction: in , protocol: tcp , state: present, enabled: yes }
   - { name: alarmcol_sdb_3389_in_tcp , host: sdb , localport: 3389 , action: allow , direction: in , protocol: tcp , state: present, enabled: yes }
   - { name: alarmcol_sdb_1433_out_tcp , host: sdb , localport: 1433 , action: allow , direction: out , protocol: tcp , state: present, enabled: yes }
   - { name: alarmcol_sdb_1434_out_tcp , host: sdb , localport: 1434 , action: allow , direction: out , protocol: tcp , state: present, enabled: yes }
@@ -208,7 +208,7 @@ firewall_port_rules:
   - { name: alarmcol_mvl_445_in_tcp , host: mvl , localport: 445 , action: allow , direction: in , protocol: tcp , state: present, enabled: yes }
   - { name: alarmcol_mvl_137_in_udp , host: mvl , localport: 137 , action: allow , direction: in , protocol: udp , state: present, enabled: yes }
   - { name: alarmcol_mvl_138_in_udp , host: mvl , localport: 138 , action: allow , direction: in , protocol: udp , state: present, enabled: yes }
-  - { name: alarmcol_mvl_512-1024_in_tcp , host: mvl , localport: 512-1024 , action: allow , direction: in , protocol: tcp , state: present, enabled: yes }
+  - { name: alarmcol_mvl_512-1023_in_tcp , host: mvl , localport: 512-1023 , action: allow , direction: in , protocol: tcp , state: present, enabled: yes }
   - { name: alarmcol_mvl_3389_in_tcp , host: mvl , localport: 3389 , action: allow , direction: in , protocol: tcp , state: present, enabled: yes }
   - { name: alarmcol_mvl_137_out_tcp , host: mvl , localport: 137 , action: allow , direction: out , protocol: tcp , state: present, enabled: yes }
   - { name: alarmcol_mvl_138_out_tcp , host: mvl , localport: 138 , action: allow , direction: out , protocol: tcp , state: present, enabled: yes }
@@ -232,7 +232,7 @@ firewall_port_rules:
   - { name: alarmcol_tti_445_in_tcp , host: tti , localport: 445 , action: allow , direction: in , protocol: tcp , state: present, enabled: yes }
   - { name: alarmcol_tti_137_in_udp , host: tti , localport: 137 , action: allow , direction: in , protocol: udp , state: present, enabled: yes }
   - { name: alarmcol_tti_138_in_udp , host: tti , localport: 138 , action: allow , direction: in , protocol: udp , state: present, enabled: yes }
-  - { name: alarmcol_tti_512-1024_in_tcp , host: tti , localport: 512-1024 , action: allow , direction: in , protocol: tcp , state: present, enabled: yes }
+  - { name: alarmcol_tti_512-1023_in_tcp , host: tti , localport: 512-1023 , action: allow , direction: in , protocol: tcp , state: present, enabled: yes }
   - { name: alarmcol_tti_3389_in_tcp , host: tti , localport: 3389 , action: allow , direction: in , protocol: tcp , state: present, enabled: yes }
   - { name: alarmcol_tti_137_out_tcp , host: tti , localport: 137 , action: allow , direction: out , protocol: tcp , state: present, enabled: yes }
   - { name: alarmcol_tti_138_out_tcp , host: tti , localport: 138 , action: allow , direction: out , protocol: tcp , state: present, enabled: yes }
