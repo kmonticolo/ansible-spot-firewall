@@ -267,3 +267,9 @@ firewall_port_rules:
   - { name: tonescraper_Inserter_445_in_TCP , host: Inserter , localport: 445 , action: allow , direction: in , protocol: TCP , state: present, enabled: yes }
   - { name: tonescraper_Inserter_137_in_UDP , host: Inserter , localport: 137 , action: allow , direction: in , protocol: UDP , state: present, enabled: yes }
   - { name: tonescraper_Inserter_138_in_UDP , host: Inserter , localport: 138 , action: allow , direction: in , protocol: UDP , state: present, enabled: yes }
+  - { name: management_mdb_4056_in_TCP , host: mdb , localport: 4056 , action: allow , direction: in , protocol: TCP , state: present, enabled: yes }
+  - { name: management_mdb_4057_in_TCP , host: mdb , localport: 4057 , action: allow , direction: in , protocol: TCP , state: present, enabled: yes }
+  - { name: management_sdb_4056_in_TCP , host: sdb , localport: 4056 , action: allow , direction: in , protocol: TCP , state: present, enabled: yes }
+  - { name: management_sdb_4057_in_TCP , host: sdb , localport: 4057 , action: allow , direction: in , protocol: TCP , state: present, enabled: yes }
+  - { name: management_mvl_4056_in_TCP , host: mvl , localport: 4056 , action: allow , direction: in , protocol: TCP , state: present, enabled: yes }
+  - { name: management_mvl_4057_in_TCP , host: mvl , localport: 4057 , action: allow , direction: in , protocol: TCP , state: present, enabled: yes }
