@@ -68,6 +68,7 @@ firewall_port_rules:
   - { name: schedule_sdb_1433_out_tcp , host: sdb , localport: 1433 , action: allow , direction: out , protocol: tcp , state: present, enabled: yes }
   - { name: schedule_sdb_1434_out_tcp , host: sdb , localport: 1434 , action: allow , direction: out , protocol: tcp , state: present, enabled: yes }
   - { name: dbm_mdb_4007_in_tcp , host: mdb , localport: 4007 , action: allow , direction: in , protocol: tcp , state: present, enabled: yes }
+  - { name: dbm_sdb_4007_in_tcp , host: sdb , localport: 4007 , action: allow , direction: in , protocol: tcp , state: present, enabled: yes }
   - { name: dbm_mdb_4008_in_tcp , host: mdb , localport: 4008 , action: allow , direction: in , protocol: tcp , state: present, enabled: yes }
   - { name: dbm_mdb_139_in_tcp , host: mdb , localport: 139 , action: allow , direction: in , protocol: tcp , state: present, enabled: yes }
   - { name: dbm_mdb_445_in_tcp , host: mdb , localport: 445 , action: allow , direction: in , protocol: tcp , state: present, enabled: yes }
