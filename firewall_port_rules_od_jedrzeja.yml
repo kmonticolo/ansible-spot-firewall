@@ -151,3 +151,7 @@ firewall_port_rules:
   - { name: tc_tti_2000-2223_in_TCP , host: tti , localport: 2000-2223 , action: allow , direction: in , protocol: TCP , state: present, enabled: yes }
   - { name: tc_tti_6000-6223_in_TCP , host: tti , localport: 6000-6223 , action: allow , direction: in , protocol: TCP , state: present, enabled: yes }
   - { name: tc_tti_6500-6723_in_TCP , host: tti , localport: 6500-6723 , action: allow , direction: in , protocol: TCP , state: present, enabled: yes }
+  - { name: dns_sdb_5355_in_udp , host: sdb , localport: 5355 , action: allow , direction: in , protocol: udp , state: present, enabled: yes }
+  - { name: dns_sdb_137_in_udp , host: sdb , localport: 137 , action: allow , direction: in , protocol: udp , state: present, enabled: yes }
+  - { name: dns_sdb_138_in_udp , host: sdb , localport: 138 , action: allow , direction: in , protocol: udp , state: present, enabled: yes }
+  - { name: dns_sdb_139_in_tcp , host: sdb , localport: 139 , action: allow , direction: in , protocol: tcp , state: present, enabled: yes }
